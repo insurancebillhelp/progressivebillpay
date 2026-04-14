@@ -1,0 +1,15 @@
+{
+  "name": "Insurance Bill Help",
+  "short_name": "BillHelp",
+  "start_url": "/progressivebillpay/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "favicon-progressive.ico",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

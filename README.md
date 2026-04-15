@@ -15,9 +15,7 @@ The page is designed to help users understand how insurance billing systems may 
 
 ## Billing Reference
 
-For general billing-related queries, users may come across references such as:
-
-(888) 620-0950
+For general billing-related queries, users may come across references.
 
 This number is included within informational context to support billing-related search intent.
 

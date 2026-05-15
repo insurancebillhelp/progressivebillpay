@@ -601,11 +601,122 @@ and is not affiliated with, endorsed by, or officially connected to Progressive 
 
 </div>
 
-<!-- FLOATING CALL -->
-<div class="floating-call">
-<strong>(18889331113)</strong>
-<span>Pay Bill Now</span>
-</div>
+<!-- PREMIUM FLOATING CALL BUTTON -->
+<a href="tel:18889331113" class="floating-call" aria-label="Call Progressive Bill Pay Support">
+    <div class="call-icon">📞</div>
+
+    <div class="call-content">
+        <strong>1(888)933-1113</strong>
+        <span>Pay Bill Now</span>
+    </div>
+</a>
+
+<style>
+.floating-call{
+    position:fixed;
+    bottom:22px;
+    right:20px;
+    z-index:99999;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:#fff;
+    text-decoration:none;
+
+    padding:14px 18px;
+    border-radius:18px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.28),
+        0 0 0 1px rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    transition:all .25s ease;
+    animation:floatPulse 2.2s infinite;
+
+    font-family:Arial,sans-serif;
+}
+
+.floating-call:hover{
+    transform:translateY(-4px) scale(1.02);
+    box-shadow:
+        0 14px 30px rgba(0,0,0,.35),
+        0 0 18px rgba(37,99,235,.35);
+}
+
+.call-icon{
+    width:48px;
+    height:48px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+
+    font-size:22px;
+
+    box-shadow:0 0 15px rgba(59,130,246,.5);
+}
+
+.call-content{
+    display:flex;
+    flex-direction:column;
+    line-height:1.2;
+}
+
+.call-content strong{
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:.3px;
+}
+
+.call-content span{
+    font-size:13px;
+    color:#cbd5e1;
+    margin-top:2px;
+}
+
+@keyframes floatPulse{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-3px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:600px){
+    .floating-call{
+        right:14px;
+        bottom:18px;
+        padding:12px 15px;
+        border-radius:16px;
+    }
+
+    .call-icon{
+        width:42px;
+        height:42px;
+        font-size:20px;
+    }
+
+    .call-content strong{
+        font-size:16px;
+    }
+
+    .call-content span{
+        font-size:12px;
+    }
+}
+</style>
 
 <!-- FULL FAQ SCHEMA -->
 <script type="application/ld+json">
